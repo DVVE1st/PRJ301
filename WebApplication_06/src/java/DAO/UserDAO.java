@@ -16,10 +16,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import utils.DBUtils;
 
-/**
- *
- * @author tungi
- */
 public class UserDAO implements IDAO<UserDTO, String> {
 
     @Override
@@ -34,11 +30,6 @@ public class UserDAO implements IDAO<UserDTO, String> {
             conn = DBUtils.getConnection();
             Statement st = conn.createStatement();
             int n = st.executeUpdate(sql);
-//            if(n>0){
-//                return true;
-//            }else{
-//                return false;
-//            }
             return n > 0;
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);

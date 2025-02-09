@@ -7,10 +7,6 @@ Mục đích chính là đóng gói dữ liệu để truyền qua network hoặ
  */
 package dto;
 
-/**
- *
- * @author tungi
- */
 public class UserDTO {
     private String userID;
     private String fullName;

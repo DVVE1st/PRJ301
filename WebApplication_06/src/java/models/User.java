@@ -15,7 +15,6 @@ public class User {
     private String address;
     private String password;
     private String roleID;
-    // .... add more
 
     public User() {
     }
@@ -67,7 +66,4 @@ public class User {
     public void setRoleID(String roleID) {
         this.roleID = roleID;
     }
-    
-    // ... add more
-    
 }
